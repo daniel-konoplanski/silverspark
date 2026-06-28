@@ -1,0 +1,18 @@
+[project]
+name = "silverspark"
+version = "0.1.0"
+description = "An AFK barding-salvage bot for Conqueror's Blade."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pydirectinput",
+    "keyboard",
+    "pyautogui",
+]
+
+[tool.uv]
+# Run-only project: uv manages the environment but does not build/install the
+# single-module script (run it with `uv run silverspark.py`).
+package = false
+# Windows-only bot (DirectX input + admin PowerShell), so lock just for Windows.
+environments = ["sys_platform == 'win32'"]

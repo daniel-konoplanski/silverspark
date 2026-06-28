@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# Virtual environments (uv creates .venv/; uv.lock is committed on purpose)
 .venv/
 venv/
 env/

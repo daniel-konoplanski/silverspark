@@ -1,3 +1,0 @@
-pydirectinput
-keyboard
-pyautogui
